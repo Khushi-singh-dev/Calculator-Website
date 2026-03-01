@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #e0e0e0;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+input {
+  width: 100%;
+  height: 65px;
+  margin: 12px 0;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 540;
+  text-align: right;
+}
+button {
+  height: 50px;
+  width: 60px;
+  margin: 4px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.1s;
+}
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+}
+button:active {
+  transform: scale(0.95);
+}
+.container {
+  padding: 12px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  height: 400px;
+  width: 300px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.task {
+  color: #ff9900;
+  font-size: 18px;
+  font-weight: bold;
+}
+.result {
+  background-color: #ff9900;
+  font-size: 18px;
+  font-weight: bold;
+}
+#historyContainer {
+    width: 280px;             /* adjust as needed */
+    max-height: 200px;        /* height before scroll */
+    background: rgba(255, 255, 255, 0.1);  /* glassy look */
+    backdrop-filter: blur(10px);           /* blur background */
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 20px;        /* space from calculator */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#calcHistory {
+    flex: 1;
+    overflow-y: auto;          /* scrollable */
+    margin-bottom: 10px;
+    padding-right: 5px;
+}
+
+#calcHistory p {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.2s all;
+}
+
+#clearHistoryBtn {
+    padding: 2px 12px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background: linear-gradient(145deg, #ffbf6b, #ed8c1e);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s all;
+}
+
+#clearHistoryBtn:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
